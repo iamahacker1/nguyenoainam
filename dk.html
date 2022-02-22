@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="dk.css">
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <label>Họ và tên:</label>
+            <input type="text" class="form-control">
+        </div>
+        <div>
+            <fieldset>
+                <legend>Giới tính:</legend>
+                <label><input type="radio" name="gioitinh" value="1"> Nam</label>
+                <label><input type="radio" name="gioitinh" value="2"> Nữ</label>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label>Ngày sinh:</label>
+            <input type="data" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>email:</label>
+            <div>
+                <input type="data" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Lớp:</label>
+            <input list="Khoi" class="form-control">
+            <datalist id="Khoi">
+                <option value="10"></option>
+                <option value="11"></option>
+                <option value="12"></option>
+            </datalist>
+        </div>
+        <div>
+            <fieldset>
+                <div class="form-group">
+                    <legend>Sở thích:</legend>
+                    <label><input type="checkbox" name="sothich" value="1"> Thể thao</label>
+                    <label><input type="checkbox" name="sothich" value="2"> Du lịch</label>
+                    <label><input type="checkbox" name="sothich" value="3"> Âm nhạc</label>
+                    <label><input type="checkbox" name="sothich" value="4"> Ấm thực</label>
+                </div>
+            </fieldset>
+        </div>
+        <hr>
+        <div class="form-group">
+            <button class="font-button" type="submit">Đăng ký</button>
+            <button class="font-button" type="reset">Nhập lại</button>
+        </div>
+    </form>
+</body>
+
+</html>
